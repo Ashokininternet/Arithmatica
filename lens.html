@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Arithmatica</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <h1>Lens equation</h1>
@@ -31,7 +31,7 @@
             <option value="3">Power</option>
         </select>
 
-        <button type="button" onclick="calculate()">Calculate</button>
+        <button type="button" onclick="calculate()" id="calc-button">Calculate</button>
     </form>
 
     <h2>Result:</h2>
@@ -40,11 +40,12 @@
    <div id="tc">Please enter the values you have, then select the correct option to perform the calculation.</div>
       <div id="more-style">
         <h1>More options</h1>
-        <div id="more-options">
-            <a href="lens.html" id="a">Lens</a>
-            <a href="main.html" id="a">Equations of motion</a>
-        </div>
+            <div id="more-options">
+                
+            </div>
+
    </div>
-   <script src="lens.js"></script>
+    <script src="script/looks/render.js" type="module"></script>
+   <script src="script/lens.js" ></script>
 </body>
 </html>

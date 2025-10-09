@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Arithmatica</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
-    <h1>Physics Calculator</h1>
-    <form id="calcForm">
-        <label for="distance">Distance (in meters):</label>
-        <input type="number" id="distance" required>
+    <div class="main-part">
+        <h1>Welcome to Arithmatica</h1>
+        <div id="tc">This website is not optimized for mobile devices, which may affect the user experience.</div>
+        <div class="know-more">
+            <p>View more of my projects on <a class="a-m" href="https://github.com/Ashokininternet?tab=repositories"
+                    target="_blank">Github</a></p>
+            <p>Know more about me on my <a class="a-m"href="https://github.com/Ashokininternet" target="_blank">Github profile</a>
+            </p>
+        </div>
+        <div class="box-content"><div id="tc">Please choose the type of calculation you would like to perform from the options provided down.
+            </div>
+        <div class="button-options">
+            <button><a href="lens.html">Lens</a></button>
+            <button><a href="equation.html">Equations of motion</a></button>
+        </div>
+        </div>
 
-        <label for="displacement">Displacement (in meters):</label>
-        <input type="number" id="displacement" required>
 
-        <label for="velocity">Final Velocity (in m/s):</label>
-        <input type="number" id="velocity" required>
 
-        <label for="initialVelocity">Initial Velocity (in m/s):</label>
-        <input type="number" id="initialVelocity" required>
-
-        <label for="seconds">Time Seconds:</label>
-        <input type="number" id="seconds" required>
-
-        <label for="option">Select an option:</label>
-        <select id="option">
-            <option value="1">Speed</option>
-            <option value="2">Velocity</option>
-            <option value="3">Displacement</option>
-            <option value="4">Time</option>
-            <option value="5">Acceleration</option>
-        </select>
-
-        <button type="button" onclick="calculate()">Calculate</button>
-    </form>
-
-    <h2>Result:</h2>
-    <div id="result"></div>
-   <div id="tc">Please enter the values you have, then select the correct option to perform the calculation.</div>
-   <div id="more-style">
+    </div>
+    <div id="more-style">
         <h1>More options</h1>
         <div id="more-options">
-            <a href="lens.html" id="a">Lens</a>
-            <a href="main.html" id="a">Equations of motion</a>
+
         </div>
-   </div>
-  
-   
-
-    <script src="equation.js"></script>
+    </div>
+    <script src="script/looks/render.js" type="module"></script>
+    <script src="script/lens.js"></script>
 </body>
-</html>
 
+</html>

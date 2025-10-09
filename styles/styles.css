@@ -1,13 +1,16 @@
+html,
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    }
+}
 
 h1 {
     text-align: center;
     color: #333;
-    }
+}
 
 form {
     background: #fff;
@@ -16,24 +19,24 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin: 0 auto;
-    }
+}
 
 label {
     display: block;
     margin: 10px 0 5px;
-    }
+}
 
-    input,
-    select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    }
+}
 
-button {
+#calc-button {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
@@ -42,41 +45,58 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    }
-    
-button:hover {
+}
+
+#calc-button:hover {
     background-color: #218838;
-    }
+}
 
 h2 {
     text-align: center;
     color: #333;
-    }
+}
 
 #result {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 20px;
-        color: #007bff;
-        }
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #007bff;
+}
 
 #tc {
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
     color: #ff0000;
-    }
+    padding-bottom: 10px;
+}
 
-#more-options{
+#more-options {
     display: flex;
     justify-content: center;
     gap: 2%;
 }
-#a{
+
+#a {
     text-decoration: none;
-    color:red;
+    color: rgb(75, 75, 74);
 }
-#a:hover{
-    color: #28a745;
+
+#a:hover {
+    color: #ff00006c;
     cursor: pointer;
+}
+
+#more-style {
+    background-color: #28a745;
+    border-color: #333;
+    display: flex;
+    margin: 0px;
+    max-width: 100%;
+    padding-bottom: 100px;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
 }

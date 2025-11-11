@@ -78,12 +78,11 @@ h2 {
 }
 
 #a {
+    color: white;
     text-decoration: none;
-    color: rgb(75, 75, 74);
 }
 
 #a:hover {
-    color: #ff00006c;
     cursor: pointer;
 }
 
@@ -99,4 +98,16 @@ h2 {
     justify-content: center;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 6vh; 
+}
+.button-style {
+    color: white;
 }

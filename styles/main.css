@@ -26,11 +26,11 @@ button {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff00006c;
     cursor: pointer;
 }
 

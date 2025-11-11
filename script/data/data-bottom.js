@@ -10,5 +10,9 @@ export const data = [
     {
         link: 'equation.html',
         name: 'Equations of motion'
+    },
+    {
+        link: 'trigonometry.html',
+        name: 'Trigonometry'
     }
 ]

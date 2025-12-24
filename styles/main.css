@@ -3,61 +3,113 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #000;
+    overflow-x: hidden;
+
+    /* Manga halftone background */
+    background-image:
+        radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+    animation: paperMove 30s linear infinite;
 }
 
+@keyframes paperMove {
+    from { background-position: 0 0; }
+    to { background-position: 300px 300px; }
+}
+
+/* Main container */
 .main-part {
-    width: 100%;
     min-height: 100vh;
-    box-sizing: border-box;
 }
 
+/* Center ALL text */
+p {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button panel */
 .button-options {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
+/* Manga buttons */
 button {
-    padding: 20px 30px;
-    background-color: #28a745;
-    border-style: none;
-    border-radius: 5px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
+    padding: 18px 36px;
+    background: #fff;
+    color: #000;
+    border: 4px solid #000;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
     cursor: pointer;
+    box-shadow: 8px 8px 0 #000;
+    transition: transform 0.15s ease;
 }
 
-.know-more {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 12px 12px 0 #000;
 }
 
-p {
-    color: rgb(66, 64, 61);
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 #000;
 }
 
-.a-m {
-    color: rgb(255, 117, 117);
-}
-
-.a-m:hover {
-    cursor: pointer;
-    color: rgb(95, 151, 95);
-}
-
+/* Content box = manga panel */
 .box-content {
+    margin: 35px auto;
+    padding: 18px 22px;
+    border: 4px solid #000;
+    box-shadow: 10px 10px 0 #000;
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid black;
-    border-radius: 8px;
-    padding: 8px;
+    animation: panelPop 0.6s ease;
+}
+
+/* Math section */
+.math-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px;
+    margin: 35px;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0 #000;
+    background: #fff;
+}
+
+/* Images – manga cutout */
+.image-container img {
+    border: 4px solid #000;
+    box-shadow: 8px 8px 0 #000;
+    animation: imageFloat 6s ease-in-out infinite;
+}
+
+@keyframes imageFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .math-section {
+        flex-direction: column;
+        text-align: center;
+    }
 }

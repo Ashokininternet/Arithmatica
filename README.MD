@@ -1,1 +1,1 @@
-The GithubPages link for the project : [https://ashokininternet.github.io/Arithmatica/main.html](https://ashokininternet.github.io/Arithmatica/main.html)
+The GithubPages link for the project: [https://ashokininternet.github.io/Arithmatica/main.html](https://ashokininternet.github.io/Arithmatica/main.html)

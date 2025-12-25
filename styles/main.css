@@ -113,3 +113,12 @@ button:active {
         text-align: center;
     }
 }
+/* REMOVE underline everywhere */
+a {
+    text-decoration: none;
+}
+
+/* Prevent text-only click feeling */
+button a:hover {
+    cursor: pointer;
+}

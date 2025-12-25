@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatica</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Transformer</h1>
+    <form id="calcForm">
+        <label for="Ns">Number of turns in secondary [Ns] :</label>
+        <input type="number" id="Ns" required>
+
+        <label for="Np">Number of turns in primary [Np] :</label>
+        <input type="number" id="Np" required>
+
+        <label for="Vs">Voltage in secondary [Vs] :</label>
+        <input type="number" id="Vs" required>
+
+        <label for="Vp">Voltage in primary [Vp] :</label>
+        <input type="number" id="Vp" required>
+
+        <label for="e">Voltage induced in one turn [e] :</label>
+        <input type="number" id="e" required>
+
+        <label for="option">Select an option:</label>
+        <select id="option">
+            <option value="1">Voltage in secondary</option>
+            <option value="2">Number of turns in secondary</option>
+            <option value="3">Voltage in primary</option>
+             <option value="4">Number of turns in primary</option>
+        </select>
+
+        <button type="button" onclick="calculate()" id="calc-button">Calculate</button>
+    </form>
+
+    <h2>Result:</h2>
+
+   <div id="result"></div>
+   <div id="tc">Please enter the values you have, then select the correct option to perform the calculation.</div>
+
+   <script src="script/Transformer.js" ></script>
+</body>
+</html>

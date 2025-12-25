@@ -141,9 +141,14 @@ h2 {
     font-weight: 700;
 }
 
-/* Links */
-#a {
-    color: #000;
-    font-weight: 900;
-    text-decoration: underline;
+/* REMOVE underline everywhere */
+a {
+    text-decoration: none;
+    color: rgb(36, 173, 36);
+}
+
+
+/* Prevent text-only click feeling */
+button a:hover {
+    cursor: pointer;
 }

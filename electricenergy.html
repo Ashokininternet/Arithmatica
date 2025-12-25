@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatica</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Electric Energy</h1>
+    <form id="calcForm">
+        <label for="I">Current [I] (A) :</label>
+        <input type="number" id="I" required>
+
+        <label for="V">Voltage [V] (V,) :</label>
+        <input type="number" id="V" required>
+
+        <label for="R">Resistance [R] (Ω) :</label>
+        <input type="number" id="R" required>
+
+        <label for="t">Time [t] (in seconds):</label>
+        <input type="number" id="t" required>
+
+        <label for="H">Heat [H] (J) :</label>
+        <input type="number" id="H" required>
+
+        <label for="option">Select an option:</label>
+        <select id="option">
+            <option value="1">Heat</option>
+            <option value="2">Voltage</option>
+            <option value="3">Power</option>
+        </select>
+
+        <button type="button" onclick="calculate()" id="calc-button">Calculate</button>
+    </form>
+
+    <h2>Result:</h2>
+
+   <div id="result"></div>
+   <div id="tc">Please enter the values you have, then select the correct option to perform the calculation.</div>
+
+   <script src="script/electricenergy.js" ></script>
+</body>
+</html>

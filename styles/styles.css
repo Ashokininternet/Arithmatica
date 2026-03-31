@@ -142,7 +142,7 @@ h2 {
 }
 
 /* REMOVE underline everywhere */
-a {
+a,button {
     text-decoration: none;
     color: rgb(36, 173, 36);
 }

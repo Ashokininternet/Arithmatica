@@ -4,7 +4,7 @@ Arithmatica is a modern, lightweight web application designed to make practicing
 
 ## 🚀 Live Demo
 Check out the app in action here: 
-**[https://ashokininternet.github.io/Arithmatica/](https://ashokininternet.github.io/Arithmatica/main.html)**
+**[https://ashokininternet.github.io/Arithmatica/main.html](https://ashokininternet.github.io/Arithmatica/main.html)**
 
 ## ✨ Features
 - **Core Function:** Does Calculations related to physics and maths. eg: Distance, Time, and Acceleration and many more.

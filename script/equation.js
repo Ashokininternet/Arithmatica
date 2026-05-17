@@ -36,7 +36,7 @@ function calculate() {
     } else if (select === 3) {
         result = displacement() + " m";
     } else if (select === 4) {
-        result = time() + "seconds";
+        result = time() + " seconds";
     } else if (select === 5) {
         result = acceleration() + " m/s²";
     } else {

@@ -1,6 +1,6 @@
 # Arithmatica 
 
-Arithmatica is a modern, lightweight web application designed to make practicing mental math simple and engaging. Whether you're a student sharpening your skills or an adult looking to keep your mind quick, Arithmatica provides a streamlined platform for arithmetic mastery.
+Arithmatica is a modern, lightweight web application designed to help solve maths and physics problems Whether you're a student or an adult Arithmatica provides a streamlined platform for solving maths and physics equations.
 
 ## Live Demo
 Check out the app in action here: 
